@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NeonPortfolio</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <h2 class="logo">NeonPortfolio</h2>
+
+      <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <button class="btn">Currículo</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hidden">
+      <h1>Olá, eu sou <span>Seu Nome</span></h1>
+      <p>Estudante de desenvolvimento apaixonado por tecnologia.</p>
+
+      <div class="hero-buttons">
+        <a href="#projetos" class="btn">Ver Projetos</a>
+        <a href="#contato" class="btn-outline">Contato</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="section">
+    <div class="container grid-2">
+
+      <div class="card big hidden fade-left">
+        <h2>Sobre Mim</h2>
+        <p>
+          Estudante de Análise e Desenvolvimento de Sistemas, focado em soluções modernas.
+        </p>
+        <p>📍 Barra Bonita - SP, Brasil</p>
+      </div>
+
+      <div class="card hidden fade-right delay-1">
+        <h3>Trajetória Acadêmica</h3>
+        <p>ADS - Fatec Jahu</p>
+        <span>2022 - Presente</span>
+      </div>
+
+    </div>
+
+    <!-- SKILLS -->
+    <div class="container grid-4 skills">
+      <div class="card hidden zoom delay-1">JavaScript</div>
+      <div class="card hidden zoom delay-2">Node.js</div>
+      <div class="card hidden zoom delay-3">PostgreSQL</div>
+      <div class="card hidden zoom delay-3">React</div>
+    </div>
+  </section>
+
+  <!-- PROJETOS -->
+  <section id="projetos" class="section alt">
+    <div class="container">
+
+      <h2 class="hidden">Projetos</h2>
+
+      <div class="grid-2">
+
+        <div class="project hidden fade-left">
+          <img src="https://via.placeholder.com/500x300">
+          <h3>Sistema de Gestão</h3>
+          <p>Plataforma completa com dashboard.</p>
+        </div>
+
+        <div class="project hidden fade-right delay-1">
+          <img src="https://via.placeholder.com/500x300">
+          <h3>API de Microserviços</h3>
+          <p>Arquitetura com Node.js e Docker.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- STACK -->
+  <section class="section">
+    <div class="container">
+
+      <h2 class="hidden">Minha Stack</h2>
+
+      <pre class="code hidden zoom delay-1">
+const frontend = ["React", "TypeScript"];
+const backend = ["Node"];
+const database = "PostgreSQL";
+      </pre>
+
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="section">
+    <div class="container grid-2">
+
+      <div class="hidden fade-left">
+        <h2>Vamos conversar?</h2>
+        <p>Aberto a oportunidades e projetos.</p>
+        <p>📧 contato@exemplo.com</p>
+      </div>
+
+      <form id="form" class="hidden fade-right delay-1">
+        <input type="text" placeholder="Nome" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Mensagem" required></textarea>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 - Seu Nome</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
