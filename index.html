@@ -1,141 +1,140 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NeonPortfolio</title>
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Amanda Froini - Portfolio</title>
+<link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-  <!-- NAVBAR -->
-  <header class="navbar">
-    <div class="container nav-content">
-      <h2 class="logo">NeonPortfolio</h2>
-
-      <nav>
-        <a href="#sobre">Sobre</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#contato">Contato</a>
-      </nav>
-
-      <button class="btn">Currículo</button>
-    </div>
+<div class="container">
+  <header>
+    <h1>Portfolio</h1>
+    <nav>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container hidden">
-      <h1>Olá, eu sou <span>Seu Nome</span></h1>
-      <p>Estudante de desenvolvimento apaixonado por tecnologia.</p>
-
-      <div class="hero-buttons">
-        <a href="#projetos" class="btn">Ver Projetos</a>
-        <a href="#contato" class="btn-outline">Contato</a>
-      </div>
+  <section class="hero" aria-label="Introdução e foto">
+    <div class="hero-text">
+      <h2>Software <span>Developer</span></h2>
+      <p>
+        I’m Amanda Froini, a 19 year old software engineer and creative developer. 
+        Currently based in Brazil, I’m passionate about building impactful digital experiences.
+      </p>
+      <button class="btn-primary" onclick="scrollToSection('work')">View My Work</button>
+      <button class="btn-secondary" onclick="alert('Journey details coming soon!')">My Journey</button>
+    </div>
+    <div class="hero-img">
+      <img src="AmandaFrolini2026-03-27 at 14.36.59.jpeg" alt="Amanda Froini">
     </div>
   </section>
 
-  <!-- SOBRE -->
-  <section id="sobre" class="section">
-    <div class="container grid-2">
+  <section class="about" id="about" aria-label="Sobre Amanda Froini">
+    <h3>From Robotics to Software Engineering</h3>
+    <p>
+      I began working in robotics and transitioned into software development,
+      exploring diverse platforms and problem-solving with creative solutions.
+    </p>
+    <div class="info-stats">
+      <div><strong>19</strong> years old</div>
+      <div><strong>Barra B.</strong> hometown</div>
+      <div><strong>FATEC</strong> education</div>
+    </div>
+  </section>
 
-      <div class="card big hidden fade-left">
-        <h2>Sobre Mim</h2>
+  <section class="tech" aria-label="Habilidades técnicas">
+    <div class="tech-card">JavaScript</div>
+    <div class="tech-card">Python</div>
+    <div class="tech-card">PHP &amp; SQL</div>
+    <div class="tech-card">UI/UX Design</div>
+  </section>
+
+  <!-- PROJETOS ATUALIZADOS -->
+  <section class="projects" id="work" aria-label="Projetos selecionados">
+    <h3>Selected Work</h3>
+    <div class="project-list">
+
+      <article class="project-item">
+        <img src="assets/todo-app.png" alt="Preview do projeto To-Do App" />
+        <h4>Task Manager App</h4>
         <p>
-          Estudante de Análise e Desenvolvimento de Sistemas, focado em soluções modernas.
+          A web application to manage daily tasks with authentication and CRUD features.
         </p>
-        <p>📍 Barra Bonita - SP, Brasil</p>
-      </div>
-
-      <div class="card hidden fade-right delay-1">
-        <h3>Trajetória Acadêmica</h3>
-        <p>ADS - Fatec Jahu</p>
-        <span>2022 - Presente</span>
-      </div>
-
-    </div>
-
-    <!-- SKILLS -->
-    <div class="container grid-4 skills">
-      <div class="card hidden zoom delay-1">JavaScript</div>
-      <div class="card hidden zoom delay-2">Node.js</div>
-      <div class="card hidden zoom delay-3">PostgreSQL</div>
-      <div class="card hidden zoom delay-3">React</div>
-    </div>
-  </section>
-
-  <!-- PROJETOS -->
-  <section id="projetos" class="section alt">
-    <div class="container">
-
-      <h2 class="hidden">Projetos</h2>
-
-      <div class="grid-2">
-
-        <div class="project hidden fade-left">
-          <img src="https://via.placeholder.com/500x300">
-          <h3>Sistema de Gestão</h3>
-          <p>Plataforma completa com dashboard.</p>
+        <p class="tech-used">React • Node.js • MongoDB</p>
+        <div class="project-links">
+          <a href="https://github.com/amandafrolini6/task-manager" target="_blank">GitHub</a>
+          <a href="https://SEU-PROJETO.vercel.app" target="_blank">Live Demo</a>
         </div>
+      </article>
 
-        <div class="project hidden fade-right delay-1">
-          <img src="https://via.placeholder.com/500x300">
-          <h3>API de Microserviços</h3>
-          <p>Arquitetura com Node.js e Docker.</p>
+      <article class="project-item">
+        <img src="assets/robotics.png" alt="Projeto de lógica para robótica" />
+        <h4>Robotics Control System</h4>
+        <p>
+          Intelligent control system for autonomous robots using Python algorithms.
+        </p>
+        <p class="tech-used">Python • Automation • Algorithms</p>
+        <div class="project-links">
+          <a href="https://github.com/amandafrolini6/robotics-system" target="_blank">GitHub</a>
         </div>
+      </article>
 
-      </div>
-    </div>
-  </section>
-
-  <!-- STACK -->
-  <section class="section">
-    <div class="container">
-
-      <h2 class="hidden">Minha Stack</h2>
-
-      <pre class="code hidden zoom delay-1">
-const frontend = ["React", "TypeScript"];
-const backend = ["Node"];
-const database = "PostgreSQL";
-      </pre>
+      <article class="project-item">
+        <img src="assets/portfolio.png" alt="Projeto de portfólio pessoal" />
+        <h4>Personal Portfolio</h4>
+        <p>
+          Responsive portfolio website showcasing projects and skills.
+        </p>
+        <p class="tech-used">HTML • CSS • JavaScript</p>
+        <div class="project-links">
+          <a href="https://github.com/SEU-USUARIO/portfolio" target="_blank">GitHub</a>
+          <a href="#" target="_blank">Live Demo</a>
+        </div>
+      </article>
 
     </div>
   </section>
 
-  <!-- CONTATO -->
-  <section id="contato" class="section">
-    <div class="container grid-2">
-
-      <div class="hidden fade-left">
-        <h2>Vamos conversar?</h2>
-        <p>Aberto a oportunidades e projetos.</p>
-        <p>📧 contato@exemplo.com</p>
-      </div>
-
-      <form id="form" class="hidden fade-right delay-1">
-        <input type="text" placeholder="Nome" required>
-        <input type="email" placeholder="Email" required>
-        <textarea placeholder="Mensagem" required></textarea>
-        <button type="submit" class="btn">Enviar</button>
-      </form>
-
+  <section class="education" aria-label="Crescimento contínuo">
+    <div class="education-left">
+      <h3>Continuous Growth</h3>
+      <p><strong>FATEC SCS</strong> – Software Engineering Degree</p>
+      <p>Currently pursuing, focusing on modern software standards and theory.</p>
+      <p><strong>SENAI Robotics</strong> – Certification in Robotics and Automation.</p>
     </div>
+    <aside class="education-right" aria-label="Línguas e comunicação">
+      <p><strong>Global Communication</strong></p>
+      <p>English: Advanced</p>
+      <p>Portuguese: Native</p>
+    </aside>
   </section>
 
-  <!-- FOOTER -->
+  <section class="contact" id="contact" aria-label="Contato">
+    <div class="contact-info">
+      <h3>Let's collaborate on your next vision.</h3>
+      <p>Whether it's a startup idea, mission or creative project, I’m ready to help make it real.</p>
+      <p>Email: <a href="mailto:amanda.froini@gmail.com">amanda.froini@gmail.com</a></p>
+      <p>Social: 
+         <a href="https://www.linkedin.com/in/amanda-frolini-097186301/" target="_blank">Linkedin</a> 
+        <a href="https://github.com/amandafrolini6" target="_blank">GitHub</a>
+      </p>
+    </div>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Full Name" required />
+      <input type="email" id="email" placeholder="Email Address" required />
+      <textarea id="message" placeholder="Tell me about your project..." required></textarea>
+      <button type="submit" class="send-btn">Send Message</button>
+    </form>
+  </section>
+
   <footer>
-    <p>© 2026 - Seu Nome</p>
+    &copy; 2026 Amanda Froini - All rights reserved.
   </footer>
+</div>
 
-  <!-- JS -->
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
